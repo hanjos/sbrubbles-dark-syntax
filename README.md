@@ -2,4 +2,4 @@
 
 No big concept here, just my personal dark syntax theme.
 
-![Screenshot](example.png)
+![Screenshot](https://raw.githubusercontent.com/hanjos/sbrubbles-dark-syntax/master/example.png)
