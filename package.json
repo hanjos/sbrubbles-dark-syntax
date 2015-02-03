@@ -1,0 +1,11 @@
+{
+  "name": "sbrubbles-dark-syntax",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "No big concept here, just my personal dark syntax theme.",
+  "repository": "https://github.com/hanjos/sbrubbles-dark-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.176.0"
+  }
+}

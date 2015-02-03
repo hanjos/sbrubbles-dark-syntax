@@ -1,0 +1,61 @@
+@import "colors";
+
+// This defines all syntax variables that syntax themes must implement when they
+// include a syntax-variables.less file.
+
+// General colors
+@syntax-text-color: @very-light-gray;
+@syntax-cursor-color: white;
+@syntax-selection-color: lighten(@dark-gray, 15%);
+@syntax-background-color: @very-dark-gray;
+
+// Guide colors
+@syntax-wrap-guide-color: @dark-gray;
+@syntax-indent-guide-color: @gray;
+@syntax-invisible-character-color: @gray;
+
+// For find and replace markers
+@syntax-result-marker-color: @light-gray;
+@syntax-result-marker-color-selected: white;
+
+// Gutter colors
+@syntax-gutter-text-color: @very-light-gray;
+@syntax-gutter-text-color-selected: @syntax-gutter-text-color;
+@syntax-gutter-background-color: @dark-gray;
+@syntax-gutter-background-color-selected: @gray;
+
+// For git diff info. i.e. in the gutter
+@syntax-color-renamed: @blue;
+@syntax-color-added: @green;
+@syntax-color-modified: @orange;
+@syntax-color-removed: @red;
+
+// Extra
+@operator-color: @light-gray;
+
+@comment-color: @light-gray;
+@comment-background-color: fadeout(@black, 60%);
+
+@macro-background-color: fadeout(@white, 80%);
+
+@string-color: @green;
+@string-background-color: fadeout(darken(@string-color, 10%), 75%);
+@character-regexp-color: lighten(@purple, 10%);
+
+@regexp-color: lighten(@purple, 10%);
+@regexp-background-color: fadeout(darken(@regexp-color, 10%), 75%);
+
+@keyword-color: @blue;
+@keyword-special-method-color: @blue;
+
+@variable-color: @very-light-gray;
+@variable-instance-color: @purple;
+@variable-parameter-color: @variable-color;
+@variable-other-color: @purple;
+
+@function-color: @white;
+
+@storage-color: @yellow;
+
+@constant-color: @orange;
+@constant-keyword-color: @purple; // applicable for some languages, such as Clojure
