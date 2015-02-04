@@ -39,11 +39,11 @@
 @macro-background-color: fadeout(@white, 80%);
 
 @string-color: @green;
-@string-background-color: fadeout(darken(@string-color, 10%), 75%);
-@character-regexp-color: lighten(@purple, 10%);
+@string-background-color: fadeout(darken(@string-color, 15%), 75%);
 
 @regexp-color: lighten(@purple, 10%);
-@regexp-background-color: fadeout(darken(@regexp-color, 10%), 75%);
+@character-regexp-color: lighten(@purple, 10%);
+@regexp-background-color: fadeout(darken(@regexp-color, 20%), 75%);
 
 @keyword-color: @blue;
 @keyword-special-method-color: @blue;
@@ -59,3 +59,5 @@
 
 @constant-color: @orange;
 @constant-keyword-color: @orange; // applicable for some languages, such as Clojure
+
+@annotation-color: @purple;
