@@ -36,7 +36,7 @@
 @comment-color: @light-gray;
 @comment-background-color: fadeout(@black, 60%);
 
-@macro-background-color: fadeout(@white, 80%);
+@macro-background-color: fadeout(@white, 85%);
 
 @string-color: @green;
 @string-background-color: fadeout(darken(@string-color, 15%), 75%);
@@ -56,11 +56,16 @@
 @function-color: @white;
 
 @storage-color: @yellow;
+@storage-generic-color: lighten(@storage-color, 30%);
+
+// don't know exactly what it stands for, but Clojure's grammar uses it for
+// if, try, catch, fn...
+@storage-control-color: @purple;
 
 @constant-color: @orange;
-@constant-keyword-color: @orange; // applicable for some languages, such as Clojure
+@constant-keyword-color: @orange; // Clojure keywords
 
-@annotation-color: @purple;
+@annotation-color: @purple; // Java annotations
 
 @tag-color: @teal;
 @attribute-name-color: @purple;

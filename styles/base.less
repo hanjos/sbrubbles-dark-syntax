@@ -85,16 +85,27 @@ atom-text-editor .search-results .marker.current-result .region {
   color: @storage-color;
 
   &.type.class,
-  &.storage.modifier {
+  &.modifier { // Java's public, private modifiers, class keywords...
     color: @keyword-color;
   }
 
-  &.storage.modifier.import,
-  &.storage.modifier.package, {
+  &.type.generic &.type,
+  &.type.token &.type { // Java's generics
+    color: @storage-generic-color;
+  }
+
+  &.control {
+    // don't know exactly what it stands for, but Clojure's grammar uses it for
+    // if, try, catch, fn...
+    color: @storage-control-color;
+  }
+
+  &.modifier.import,
+  &.modifier.package, { // Java's package and import statements
     color: @variable-color;
   }
 
-  &.type.annotation {
+  &.type.annotation { // Java's annotations
     color: @annotation-color;
   }
 }
@@ -102,7 +113,7 @@ atom-text-editor .search-results .marker.current-result .region {
 .constant {
   color: @constant-color;
 
-  &.keyword { // applicable for some languages, such as Clojure
+  &.keyword { // Clojure's keywords are rendered here
     color: @constant-keyword-color;
   }
 
