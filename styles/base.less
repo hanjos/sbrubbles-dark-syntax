@@ -319,6 +319,22 @@ atom-text-editor .search-results .marker.current-result .region {
   &.quoted-expression {
     background-color: @macro-background-color;
   }
+
+  &.symbol.namespace {
+    color: @namespace-color;
+  }
+
+  &.symbol.dynamic {
+    color: @variable-dynamic-color;
+  }
+
+  &.metadata {
+    color: @annotation-color;
+
+    &.map { // Clojure
+      background-color: fadeout(darken(@annotation-color, 15%), 75%);
+    }
+  }
 }
 
 .none {
